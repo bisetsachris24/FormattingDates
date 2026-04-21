@@ -12,7 +12,7 @@ public class FormatDates    {
         LocalDateTime mylocation= LocalDateTime.now();
 
         // Creating formater 1
-        DateTimeFormatter format1 = DateTimeFormatter.ofPattern(" MM/dd/yyyy");
+        DateTimeFormatter format1 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
         System.out.println(mylocation.format(format1));
 
         // Creating formater 2
