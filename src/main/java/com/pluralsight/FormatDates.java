@@ -8,7 +8,7 @@ public class FormatDates    {
 
     public static void main(String[] args) {
 
-        // Get current local date/time
+        // Get current local date and my current time
         LocalDateTime mylocation= LocalDateTime.now();
 
         // Creating formater 1
