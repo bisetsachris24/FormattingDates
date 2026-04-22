@@ -16,10 +16,11 @@ public class FormatDates    {
         System.out.println(mylocation.format(format1));
 
         // Creating formater 2
+
         DateTimeFormatter format2 = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         System.out.println(mylocation.format(format2));
 
-        //Creating formater 3
+          //Creating formater 3
         DateTimeFormatter format3 = DateTimeFormatter.ofPattern("EEEE dd, yyyy");
         System.out.println(mylocation.format(format3));
 
@@ -27,9 +28,9 @@ public class FormatDates    {
         ZonedDateTime gmtTime = ZonedDateTime.now(ZoneId.of("GMT"));
 
         DateTimeFormatter gmtFormat = DateTimeFormatter.ofPattern("EEEE, MMM dd, yyyy HH:mm");
-        System.out.println(gmtTime.format(gmtFormat));
+        System.out.println(gmtTime.format(gmtFormat) + "<-----GMT");
 
-        // Bonus
+        // Bonus all I did was to flip  gmt format
         DateTimeFormatter format5 = DateTimeFormatter.ofPattern("H:mm 'on' dd-MMM-yyyy");
         System.out.println(mylocation.format(format5));
     }
